@@ -85,6 +85,70 @@ a.menu-logo {
     font-size: 1.125em;
 }
 
+/* Sobre */
+
+.sobre {
+    padding: 60px 0;
+}
+
+.sobre-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sobre-container::after, .sobre-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+}
+
+.sobre-item {
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+}
+
+.sobre-item img {
+    display: block;
+    max-width: 100%;
+}
+
+.sobre-item h3 {
+    font-size: 2.25em;
+    background: #252525;
+    line-height: 1em;
+    width: 220px;
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0 10px 0;
+
+    /*Por padrão os elementos veem com position:static,
+    o que leva os estilos top,right,left,bottom não funcionar.
+    Também poderia utilizar o z-index para sobrepor a imagem*/
+    position: relative;
+    top: -25px;
+}
+
+/*p filho direto de sobre, não afeta outros p's mais internos*/
+.sobre > p {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: 20px auto;
+
+    /*Sempre determinar um max-width para um paragrafo,
+    pois facilita a leitura, centraliza*/
+    max-width: 460px;
+}
 
 
 
