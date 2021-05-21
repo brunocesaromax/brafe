@@ -55,3 +55,59 @@ a.menu-logo {
     /*px para em -> 18 / 16*/
     font-size: 1.125em; /* == 18px*/
 }
+
+/* Intro */
+
+.intro {
+    background: url("../img/bg-intro.jpg") no-repeat center center;
+    background-size: cover; /*background sempre estar 100%, deixa responsivo*/
+    padding: 150px 0; /*150px cima e baixo, 0px esq e dir*/
+    text-align: center;
+    color: white;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em; /*48px/16=3em*/
+}
+
+.intro h1::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: white;
+    margin: 10px auto;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 1.125em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
