@@ -67,6 +67,15 @@ a.menu-logo {
 }
 
 @media (max-width: 739px) {
+    .menu {
+        text-align: center;
+    }
+
+    a.menu-logo {
+        float: none;
+        margin: 0 auto;
+    }
+
     .menu-nav {
         float: none;
         clear: both;
@@ -173,7 +182,8 @@ a.menu-logo {
     max-width: 460px;
 }
 
-@media (min-width: 740px) and (max-width: 980px) { /*960 do container + 20px da barra de navegação*/
+@media (min-width: 740px) and (max-width: 980px) {
+    /*960 do container + 20px da barra de navegação*/
     .sobre-container {
         max-width: 720px;
     }
@@ -269,7 +279,8 @@ h2.produtos-mineiro::before {
     margin: 20px auto;
 }
 
-@media (min-width: 740px) and (max-width: 980px) { /*960 do container + 20px da barra de navegação*/
+@media (min-width: 740px) and (max-width: 980px) {
+    /*960 do container + 20px da barra de navegação*/
     .produtos-container {
         max-width: 720px;
     }
@@ -344,6 +355,28 @@ h2.produtos-mineiro::before {
     padding: 10px 20px;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+    /*960 do container + 20px da barra de navegação*/
+    .locais {
+        max-width: 720px;
+    }
+
+    .locais-item > div, .locais-item img {
+        width: 340px;
+    }
+}
+
+@media (max-width: 739px) {
+    .locais {
+        max-width: 300px;
+    }
+
+    .locais-item img {
+        width: 300px;
+        margin: 0;
+    }
+}
+
 /* Assine */
 
 .assine {
@@ -410,6 +443,27 @@ h2.produtos-mineiro::before {
     cursor: pointer;
 }
 
+@media (min-width: 740px) and (max-width: 980px) {
+    .assine-container {
+        max-width: 720px;
+    }
+
+    .assine-info, .assine form, .assine input {
+        width: 340px;
+    }
+}
+
+@media (max-width: 739px) {
+    .assine-container {
+        max-width: 300px;
+    }
+
+    .assine-info, .assine form, .assine input {
+        width: 300px;
+        margin: 10px 0 0 0;
+    }
+}
+
 /* Footer */
 
 .footer {
@@ -441,7 +495,21 @@ h2.produtos-mineiro::before {
     display: block;
 }
 
+@media (max-width: 739px) {
+    .footer-container {
+        max-width: 300px;
+    }
 
+    .footer p {
+        float: none;
+        margin: 0;
+    }
+
+    .footer img {
+        float: none;
+        margin: 10px 0;
+    }
+}
 
 
 
