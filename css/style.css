@@ -1,3 +1,9 @@
+/*Breakpoints
+3 breakpoints
+960
+740
+*/
+
 /* Reset */
 body, h1, h2, h3, p, ul {
     padding: 0;
@@ -60,6 +66,13 @@ a.menu-logo {
     font-size: 1.125em; /* == 18px*/
 }
 
+@media (max-width: 739px) {
+    .menu-nav {
+        float: none;
+        clear: both;
+    }
+}
+
 /* Intro */
 
 .intro {
@@ -87,6 +100,12 @@ a.menu-logo {
 .intro p {
     font-style: italic;
     font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+    .intro {
+        padding: 60px 0;
+    }
 }
 
 /* Sobre */
@@ -152,6 +171,27 @@ a.menu-logo {
     /*Sempre determinar um max-width para um paragrafo,
     pois facilita a leitura, centraliza*/
     max-width: 460px;
+}
+
+@media (min-width: 740px) and (max-width: 980px) { /*960 do container + 20px da barra de navegação*/
+    .sobre-container {
+        max-width: 720px;
+    }
+
+    .sobre-item {
+        width: 340px;
+    }
+}
+
+@media (max-width: 739px) {
+    .sobre-container {
+        max-width: 300px;
+    }
+
+    .sobre-item {
+        width: 300px;
+        margin: 0 aut;
+    }
 }
 
 /* Produtos */
@@ -227,6 +267,26 @@ h2.produtos-mineiro::before {
     text-align: center;
     padding: 15px 0;
     margin: 20px auto;
+}
+
+@media (min-width: 740px) and (max-width: 980px) { /*960 do container + 20px da barra de navegação*/
+    .produtos-container {
+        max-width: 720px;
+    }
+
+    .produtos-item {
+        width: 220px; /*720 / 3 - 20 == container / colunas - margin esq/dir*/
+    }
+}
+
+@media (max-width: 739px) {
+    .produtos-container {
+        max-width: 300px;
+    }
+
+    .produtos-item {
+        margin: 0 auto 20px auto;
+    }
 }
 
 /* Locais */
@@ -380,7 +440,6 @@ h2.produtos-mineiro::before {
     margin: 0 10px;
     display: block;
 }
-
 
 
 
