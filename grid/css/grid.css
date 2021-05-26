@@ -69,6 +69,7 @@
 
 /*Somente para mobile, pois para tablet já funciona as configurações padrões de grid*/
 @media (max-width: 739px) {
+    /*Elementos com width maior que tela mobile (300px) precisa de alteração*/
     .container {
         max-width: 300px;
     }
