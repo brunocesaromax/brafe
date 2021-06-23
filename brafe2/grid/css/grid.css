@@ -13,7 +13,7 @@
 /* GRID */
 .grid-1, .grid-2, .grid-3, .grid-4,
 .grid-5, .grid-6, .grid-7, .grid-8,
-.grid-9, .grid-10, .grid-11, .grid-12 {
+.grid-9, .grid-10, .grid-11, .grid-12, .grid-sm-6 {
     float: left;
     display: block;
     min-height: 1px;
@@ -70,6 +70,24 @@
     width: calc(100% - 20px);
 }
 
+/* GRID MOBILE */
+.grid-sm-6 {
+    width: calc(50% - 20px);
+}
+
+/* Grid dentro de Grid */
+.row, .row-sm {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row::after, .row::before,
+.row-sm::after, .row-sm::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 @media (max-width: 739px) {
     .container {
         max-width: 300px;
@@ -83,5 +101,10 @@
         margin-left: 0;
         margin-right: 0;
     }
-}
 
+    /*Row mobile não é resetado*/
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
